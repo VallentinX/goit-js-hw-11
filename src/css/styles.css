@@ -1,0 +1,106 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+  color: #212121;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form.search-form {
+  width: 100%;
+  height: 50px;
+  background-color: #c80497ee;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+form.search-form input {
+  font-size: 17px;
+  width: 200px;
+  height: 25px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+form.search-form input::placeholder {
+  color: #ccc;
+}
+form.search-form button {
+  background-color: #fff;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form.search-form button.src::after {
+  content: '==';
+  background-color: #000;
+  border-radius: 20px;
+}
+div.gallery {
+  width: 100%;
+  padding: 75px 0px 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+div.photo-card {
+  width: 24%;
+  height: 100%;
+  box-shadow: 3px 2px 5px 0px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.photo-card a img {
+  width: 100%;
+  height: 50%;
+}
+div.photo-card div.info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px;
+}
+div.photo-card div.info p {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 100%;
+}
+button.load-more {
+  box-shadow: 3px 2px 5px 0px #000;
+  width: 175px;
+  height: 50px;
+  margin: 100px;
+  color: #fff;
+  background-color: #c80497ee;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--animation-duration, --timing-function);
+}
+button.load-more:hover {
+  background-color: #fff;
+  color: #c80497ee;
+  font-weight: 700;
+}
